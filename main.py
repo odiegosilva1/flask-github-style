@@ -9,9 +9,10 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+
+# Define a route for the form submission
 @app.route('/form', methods=['GET', 'POST'])
 def form():
-    name = request.form['name']
     return render_template('form.html')
 
 
