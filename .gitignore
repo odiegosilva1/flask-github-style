@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 *.so
 .Python
+.venv/
 env/
 venv/
 ENV/
@@ -27,7 +28,7 @@ wheels/
 venv/
 env/
 .env
-.venv
+.venv/
 
 # PowerShell scripts (se você não quiser que eles apareçam)
 *.ps1
