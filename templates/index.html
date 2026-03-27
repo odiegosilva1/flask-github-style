@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css')}}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Home</title>
-</head>
-<body>
-    <h1>Home</h1>
-    <p>Bem-vindo à página inicial!</p>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Página Home{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Bem-vindo à Página Home</h1>
+    <p>Esta é a página inicial do nosso site. Você pode navegar para a página de login usando o menu acima.</p>
+</div>
+{% endblock %}
